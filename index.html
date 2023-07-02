@@ -118,7 +118,7 @@
     <div
       class="w-11/12 mx-auto mt-20 grid lg:grid-cols-[40%_1fr] items-center justify-items-center gap-4"
     >
-      <div class="w-fit font-bold">
+      <div data-animation="fade-from-left" class="w-fit font-bold">
         <img src="img/31.jpg" alt="befor after" />
         <span class="float-left">PRZED</span>
         <span class="float-right">PO</span>
@@ -129,7 +129,7 @@
                                                                                   x
                                                                                   x
   -->
-      <div
+      <div data-animation="fade-from-right"
         class="bg-[url(img/40.jpg)] bg-center bg-no-repeat [background-size:50%] grid xs:grid-cols-2 sm:grid-rows-2 lg:grid-rows-none xl:grid-rows-2 gap-4 text-center xs:aspect-square"
       >
         <div class="bg-white rounded-2xl shadow-2xl p-4">
@@ -188,12 +188,12 @@
                                                                             xxxxx
 -->
     <div class="grid lg:grid-cols-2 mt-20 relative">
-      <img
+      <img data-animation="fade-in" data-delay="0ms" data-duration="1s"
         src="img/51.png"
         alt="mango kapsułka"
         class="absolute right-full lg:right-1/2 translate-x-1/2 lg:h-[120%] top-1/2 -translate-y-1/2 lg:-translate-y-0 lg:-top-[10%]"
       />
-      <div class="bg-secondary pl-24 lg:pl-[5%] pr-[5%] lg:pr-[20%] py-12">
+      <div data-animation="fade-from-left" class="bg-secondary pl-24 lg:pl-[5%] pr-[5%] lg:pr-[20%] py-12">
         <p class="h2 mb-4">NATYCHMIASTOWE REZULTATY</p>
         <ul class="ml-3 space-y-1">
           <li class="flex items-center gap-4">
@@ -211,7 +211,7 @@
         </ul>
       </div>
 
-      <div class="bg-[url(img/50.jpg)] bg-center bg-no-repeat bg-cover p-[10%]">
+      <div data-animation="fade-from-right" class="bg-[url(img/50.jpg)] bg-center bg-no-repeat bg-cover p-[10%]">
         <div
           class="bg-primary bg-opacity-80 grid place-items-center py-[5%] pl-[10%] pr-[5%]"
         >
@@ -277,8 +277,10 @@
                                                                              x
 -->
     <div class="w-11/12 mx-auto mt-20 grid lg:grid-cols-[38%_1fr] justify-items-center gap-4">
-      <img src="img/70.jpg" alt="opakowanie balsamu" />
-      <div class="grid grid-rows-[auto_1fr] ">
+
+      <img data-animation="fade-from-left" src="img/70.jpg" alt="opakowanie balsamu" />
+
+      <div data-animation="fade-from-right" class="grid grid-rows-[auto_1fr] ">
         <p class="h2 mb-8">balsamy eco-odpowiedzialne!</p>
         <ul class="grid content-around gap-1">
           <li class="flex gap-4 items-center">
@@ -310,9 +312,11 @@
                                                                             xxxxx
 -->
     <div class="w-11/12 mx-auto mt-20">
-      <p class="h2 mb-10">POZNAJ balsamy Garnier body superfoods</p>
+      <p class="h2 mb-10 text-center">POZNAJ balsamy Garnier body superfoods</p>
+
       <div class='flex flex-wrap justify-center gap-4 text-center'>
-        <div data-animation='fade-from-left' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+
+        <div data-animation='fade-from-bottom'  class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
           <img src='img/81.jpg' alt='arbuz' class='mx-auto min-h-[300px] hover:scale-110 transition-transform duration-500' />
           <p class='min-h-[2lh] mt-4 font-bold text-watermelon'>Ekstrakt z arbuza + kwas hialuronowy</p>
           <p class='font-bold'>Nawilżający żel-krem</p>
@@ -328,10 +332,10 @@
               <use href="#droplet"></use>
             </svg>
           </div>
-          <button class="bg-watermelon">Odkryj</button>
+          <button class="before:bg-watermelon">Odkryj</button>
         </div>
       
-        <div data-animation='fade-in' data-duration='1000ms' data-delay='0s' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div data-animation='fade-from-bottom' data-delay="750ms" class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
           <img src='img/82.jpg' alt='aloes' class='mx-auto min-h-[300px] hover:scale-110 transition-transform duration-500' />
           <p class='min-h-[2lh] mt-4  font-bold text-aloes'>Ekstrakt z aloesu + sól magnezowa</p>
           <p class="font-bold">Kojący krem </p>
@@ -350,10 +354,10 @@
               <use href="#droplet"></use>
             </svg>
           </div>
-          <button class="bg-aloes">Odkryj</button>
+          <button class="before:bg-aloes">Odkryj</button>
         </div>
       
-        <div data-animation='fade-from-right' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div data-animation='fade-from-bottom' data-delay="1s" class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
           <img src='img/83.jpg' alt='awokado' class='mx-auto min-h-[300px] hover:scale-110 transition-transform duration-500' />
           <p class='min-h-[2lh] mt-4  font-bold text-avocado'>Olejek z awokado + kwas Omega 6</p>
           <p class="font-bold">Odżywyczy krem</p>
@@ -372,10 +376,10 @@
               <use href="#droplet"></use>
             </svg>
           </div>
-          <button class="bg-avocado">Odkryj</button>
+          <button class="before:bg-avocado">Odkryj</button>
         </div>
 
-        <div data-animation='fade-from-right' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div data-animation='fade-from-bottom' data-delay="1250ms" class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
           <img src='img/84.jpg' alt='kakao' class='mx-auto min-h-[300px] hover:scale-110 transition-transform duration-500' />
           <p class='min-h-[2lh] mt-4 font-bold text-cocoa'>Masło kakaowe + ceramidy</p>
           <p class="font-bold">Regenerujące masło</p>
@@ -397,7 +401,7 @@
               <use href="#droplet"></use>
             </svg>
           </div>
-          <button class="bg-cocoa">Odkryj</button>
+          <button class="before:bg-cocoa">Odkryj</button>
         </div>
       </div>
         

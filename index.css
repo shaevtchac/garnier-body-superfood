@@ -8,12 +8,22 @@
 
 @layer components {
   button {
-    @apply font-bold text-white py-1 rounded-lg w-full;
-    transition: 300ms ease-in;
+    @apply relative font-bold text-white py-1 rounded-lg w-full bg-transparent overflow-hidden;
   }
-  button:hover {
-    transform: scale(1.1);
+  button::before {
+    content: "";
+    @apply absolute inset-0 -z-20;   
   }
+  button::after {
+    content: "";
+    transition: 400ms ease-out;
+    @apply absolute left-0 top-0 h-full rounded-lg w-0 bg-white bg-opacity-25 -z-10 
+  }
+  button:hover::after {
+    transition: 200ms ease-in;
+    @apply w-full;
+  }
+
   .h2 {
     @apply text-[1.3em] uppercase font-bold;
   }
