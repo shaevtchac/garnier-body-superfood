@@ -24,9 +24,9 @@
                                                                             x
                                                                             x
 -->
-    <div class="flex items-end">
-      <img src="img/1l.jpg" alt="">
-      <div>
+    <div class="flex items-start">
+      <img src="img/1l.jpg" alt="modelka" class="hidden md:block w-1/5 max-w-fit">
+      <div class="self-end">
         <img
           src="img/1logo.jpg"
           alt="logo Garnier"
@@ -35,46 +35,44 @@
         <div
           class="flex flex-wrap justify-center text-center font-bold text-white"
         >
-          <div data-animation="fade-from-left" class="w-[220px] overflow-hidden">
+          <div data-animation="fade-from-bottom"  class="min-w-[180px] max-w-[240px] flex-1 overflow-hidden">
             <img
               src="img/11.jpg"
               alt="watermelon"
-              class="hover:scale-110 transition-transform duration-500"
+              class="hover:scale-110 transition-transform duration-500 w-full object-cover"
             />
             <p class="relative bg-watermelon">NAWILŻA</p>
           </div>
           <div
-            data-animation="fade-in"
-            data-delay="0ms"
-            data-duration="1s"
-            class="w-[220px] overflow-hidden"
+            data-animation="fade-from-bottom" data-delay="750ms"
+            class="min-w-[180px] max-w-[240px] flex-1 overflow-hidden"
           >
             <img
               src="img/12.jpg"
               alt="aloe"
-              class="hover:scale-110 transition-transform duration-500"
+              class="hover:scale-110 transition-transform duration-500  w-full object-cover"
             />
             <p class="relative bg-aloes">KOI</p>
           </div>
-          <div data-animation="fade-from-right" class="w-[220px] overflow-hidden">
+          <div data-animation="fade-from-bottom" data-delay="1s" class="min-w-[180px] max-w-[240px] flex-1 overflow-hidden">
             <img
               src="img/13.jpg"
               alt="avocado"
-              class="hover:scale-110 transition-transform duration-500"
+              class="hover:scale-110 transition-transform duration-500 w-full object-cover"
             />
             <p class="relative bg-avocado">ODŻYWIA</p>
           </div>
-          <div data-animation="fade-from-right" class="w-[220px] overflow-hidden">
+          <div data-animation="fade-from-bottom" data-delay="1250ms" class="min-w-[180px] max-w-[240px] flex-1 overflow-hidden">
             <img
               src="img/14.jpg"
               alt="cocoa"
-              class="hover:scale-110 transition-transform duration-500"
+              class="hover:scale-110 transition-transform duration-500 w-full object-cover"
             />
             <p class="relative bg-cocoa">REGENERUJE</p>
           </div>
         </div>
       </div>
-      <img src="img/1r.jpg" alt="">
+      <img src="img/1r.jpg" alt="" class="hidden lg:block w-1/5 max-w-fit">
     </div>
     <!--                                                                    xxxxx
                                                                                 x
@@ -83,9 +81,12 @@
                                                                             xxxxx
 -->
     <div class="w-11/12 mx-auto mt-20">
+
       <div class="grid sm:grid-cols-2 justify-items-center gap-4">
-        <div class="pr-10"><img src="img/21.jpg" alt="capsules" /></div>
-        <div>
+
+        <div data-animation="fade-from-left" class="pr-10"><img src="img/21.jpg" alt="capsules" /></div>
+
+        <div data-animation="fade-from-right">
           <div
             class="border-[2px] relative border-primary my-8 py-8 w-fit px-4 before:[content:''] before:absolute before:h-[2px] before:bg-white before:w-4/5 before:left-1/2 before:-translate-x-1/2 before:-top-[2px] after:[content:''] after:absolute after:h-[2px] after:bg-white after:w-4/5 after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px]"
           >
