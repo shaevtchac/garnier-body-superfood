@@ -26,6 +26,22 @@ module.exports = {
       },
 
       keyframes: {
+        "rotate-clock": {
+          'from': {
+            transform: 'rotate(0deg) translateX(20px) rotate(0deg)'
+          },
+          'to': {
+            transform: 'rotate(360deg) translateX(20px) rotate(-360deg)'
+          }
+        },
+        "rotate-c-clock": {
+          'from': {
+            transform: 'rotate(0deg) translateX(20px) rotate(0deg)'
+          },
+          'to': {
+            transform: 'rotate(-360deg) translateX(20px) rotate(360deg)'
+          }
+        },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-6deg)' },
           '50%': { transform: 'rotate(6deg)' },
@@ -45,6 +61,8 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 250ms linear ',
         bounce1: 'bounce1 1s cubic-bezier(0.280, 0.840, 0.420, 1) infinite',
+        'rotate-clock': 'rotate-clock 10s linear infinite',
+        'rotate-c-clock': 'rotate-c-clock 10s linear infinite',
       },
     },
   },
